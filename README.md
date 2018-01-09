@@ -78,15 +78,15 @@ The final combined filter is the function *combined_filter()* which is the combi
 The code for my perspective transform includes a function called `warp_img()`, which appears in section 2 Perspective Transform.  The `warp_img()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
 
 
-	src = np.float32([(590,450),
-                  (710,450), 
-                  (280,680), 
-                  (1100,680)])
-
-    dst = np.float32([(450,0),
-                      (w-450,0),
-                      (450,h),
-                      (w-450,h)])
+    src = np.float32([(575,460),
+                      (700,460),
+                      (150,720),
+                      (1150,720)])
+    
+    dst = np.float32([(250,0), 
+                      (1050,0), 
+                      (250,700), 
+                      (1050,700)])
 ```
 ```
 
